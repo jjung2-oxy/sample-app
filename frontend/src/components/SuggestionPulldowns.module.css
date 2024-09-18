@@ -1,0 +1,19 @@
+.suggestionContainer {
+  position: absolute;
+  top: -50px; /* Adjust this value as needed to position above the prompt box */
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  z-index: 1000; /* Ensure this is higher than the z-index of the prompt box */
+}
+
+.suggestionSelect {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  flex: 1; /* Make the select boxes take up equal space */
+}

@@ -1,0 +1,24 @@
+{
+  "containerApps.deploymentConfigurations": [
+    {
+      "label": "aoai-chatgpt",
+      "type": "AcrDockerBuildRequest",
+      "dockerfilePath": "WebApp.Dockerfile",
+      "srcPath": ".",
+      "envPath": "scripts\\.env.sample",
+      "resourceGroup": "aoai-chatgpt",
+      "containerApp": "aoai-chatgpt",
+      "containerRegistry": "aoaichatgpt709e50"
+    },
+    {
+      "label": "sample-app",
+      "type": "AcrDockerBuildRequest",
+      "dockerfilePath": "WebApp.Dockerfile",
+      "srcPath": ".",
+      "envPath": ".env.sample",
+      "resourceGroup": "sample-app",
+      "containerApp": "sample-app",
+      "containerRegistry": "sampleappb2a130"
+    }
+  ]
+}
